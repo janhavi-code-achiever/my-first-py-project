@@ -7,6 +7,11 @@ import time
 load_dotenv()
 GEMINI_API_KEY= os.getenv("GEMINI_API_KEY")
 client = genai.Client()
+st.set_page_config(
+    page_title="janvi's App",
+    page_icon="📊",  # Optional: emoji or image path
+    layout="wide"    # Optional: layout configuration
+)
 st.title("✈️Travel Assistant Friend🚇")
 st.markdown("""
 <style>
